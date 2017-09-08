@@ -1,0 +1,12 @@
+function numExtract(input) {
+    let result = [];
+    let regex = /\d+/g;
+   for(let i = 0; i < input.length; i++){
+       if(input[i].match(regex)){
+           let allMatches = input[i].match(regex);
+           for(let j = 0; j < allMatches.length;j++)
+           result.push(allMatches[j]);
+       }
+   }
+   console.log(result.join(' '));
+}
