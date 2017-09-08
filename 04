@@ -1,0 +1,12 @@
+function endsWith(text , content) {
+
+    text = text.split('').reverse().join('');
+    content = content.split('').reverse().join('');
+
+  if(text.indexOf(content) == 0){
+      console.log(true);
+  }
+  else{
+     console.log(false);
+  }
+}
