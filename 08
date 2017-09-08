@@ -1,0 +1,13 @@
+function wordTimes(text , word) {
+
+    let regex = new RegExp(word , "gi");
+    let match = regex.exec(text);
+    let result = [];
+    while(match !== null){
+        result.push(match);
+        match = regex.exec(text);
+    }
+
+
+   console.log(result.length);
+}
