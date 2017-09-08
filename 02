@@ -1,0 +1,4 @@
+function repeater(text , times) {
+  let num = Number(times);
+  console.log(text.repeat(num));
+}
