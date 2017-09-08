@@ -1,0 +1,17 @@
+function capitalize(input) {
+   let words = input.split(' ');
+   let result = [];
+       for(let i = 0; i< words.length; i++){
+           let currentWord = words[i].split('');
+           for(let j = 0; j < currentWord.length ; j++){
+               if(j == 0){
+                   currentWord[j] = currentWord[j].toUpperCase();
+               }
+               else{
+                   currentWord[j] = currentWord[j].toLowerCase();
+               }
+           }
+           result.push(currentWord.join(''));
+       }
+       console.log(result.join(" "));
+}
